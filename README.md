@@ -7,9 +7,9 @@
 - Tailwind CSS
 
 # Installation
-Install the project dependencies using npm:
+Install the project dependencies using npm : 
 npm install
 
 # Run
-Run this project by this CL:
+Run this project by this CL : 
 npm run dev
