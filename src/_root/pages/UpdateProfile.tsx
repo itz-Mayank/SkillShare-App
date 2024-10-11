@@ -1,8 +1,10 @@
-import * as z from "zod";
-import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
+import * as z from "zod";
 
+import { Loader, ProfileUploader } from "@/components/shared";
+import { Button, Input, Textarea } from "@/components/ui";
 import {
   Form,
   FormControl,
@@ -12,12 +14,10 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useToast } from "@/components/ui/use-toast";
-import { Textarea, Input, Button } from "@/components/ui";
-import { ProfileUploader, Loader } from "@/components/shared";
 
-import { ProfileValidation } from "@/lib/validation";
 import { useUserContext } from "@/context/AuthContext";
 import { useGetUserById, useUpdateUser } from "@/lib/react-query/queries";
+import { ProfileValidation } from "@/lib/validation";
 
 const UpdateProfile = () => {
   const { toast } = useToast();

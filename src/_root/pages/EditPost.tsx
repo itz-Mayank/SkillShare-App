@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 
-import { Loader } from "@/components/shared";
 import PostForm from "@/components/forms/PostForm";
+import { Loader } from "@/components/shared";
 import { useGetPostById } from "@/lib/react-query/queries";
 
 const EditPost = () => {
@@ -24,7 +24,7 @@ const EditPost = () => {
             width={36}
             height={36}
             alt="edit"
-            className="invert-white"
+            className="filter brightness-0 invert"
           />
           <h2 className="h3-bold md:h2-bold text-left w-full">Edit Post</h2>
         </div>
