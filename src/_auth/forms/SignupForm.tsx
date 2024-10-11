@@ -81,7 +81,7 @@ const SignupForm = () => {
           Create a new account
         </h2>
         <p className="text-light-3 small-medium md:base-regular mt-2">
-          To use Skill Scapep, Please enter your details
+          To use Skill Scape, Please enter your details
         </p>
 
         <form

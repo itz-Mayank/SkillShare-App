@@ -74,7 +74,7 @@
 
   /* UTILITIES */
   .invert-white {
-    @apply invert brightness-0 transition;
+    @apply invert-0 brightness-0 transition;
   }
 
   .flex-center {
@@ -276,7 +276,7 @@
   }
 
   .shad-button_ghost {
-    @apply flex gap-4 items-center justify-start hover:bg-transparent hover:text-black !important;
+    @apply flex gap-4 items-center justify-start hover:bg-transparent hover:text-white !important;
   }
 }
 

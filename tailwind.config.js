@@ -34,6 +34,7 @@ module.exports = {
   			'light-2': '#EFEFEF',
   			'light-3': '#39FF14',
   			'light-4': '#5C5C7B',
+			'grey':'#808080',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
