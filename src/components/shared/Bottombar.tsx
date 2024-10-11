@@ -1,5 +1,6 @@
-import { bottombarLinks } from "@/constants";
 import { Link, useLocation } from "react-router-dom";
+
+import { bottombarLinks } from "@/constants";
 
 const Bottombar = () => {
   const { pathname } = useLocation();
@@ -13,9 +14,8 @@ const Bottombar = () => {
             key={`bottombar-${link.label}`}
             to={link.route}
             className={`${
-              isActive ? "rounded-[10px] bg-primary-500 " : ""
-            } flex-center flex-col gap-1 p-2 transition`}
-          >
+              isActive ? "rounded-[10px] bg-primary-500" : ""
+            } flex-center flex-col gap-1 p-2 transition`}>
             <img
               src={link.imgURL}
               alt={link.label}
@@ -26,11 +26,8 @@ const Bottombar = () => {
 
             <p
               className={`tiny-medium ${
-                isActive
-                  ? "text-black"
-                  : "text-white hover:text-black active:text-black"
-              } text-grey`}
-            >
+                isActive ? "text-black" : "text-white"
+              } hover:text-black transition-colors text-grey`}>
               {link.label}
             </p>
           </Link>
